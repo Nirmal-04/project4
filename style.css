@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&family=Lilita+One&family=Offside&family=Poppins:wght@300;400;500;600;700&family=Roboto&family=Sacramento&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    height:70vh;
+    width: 100%;
+    background:url(image/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    background: #000;
+}
+.content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+}
+.content h4{
+    padding: 20px 0 0 0;
+    font-size: 1.2rem;
+    font-family: 'Offside', cursive;
+}
+.content h1{
+    padding: 20px 0 0 0;
+    color: #fff;
+    font-size: 4.5rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.content p{
+    padding: 30px 0 10px 0;
+    font-size: 1rem;
+    font-family: 'Sacramento', cursive;
+    letter-spacing: 1px;
+}
+.content .para{
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid #fff;
+    background: rgba(0, 0, 0, 0.7);
+}
+.hamburg i{
+    font-size: 3rem;
+    color: #fff;
+    padding-top: 20px;
+}
+.hamburg{
+    display: none;
+    margin-right:30px ;
+}
+.webname{
+    display: flex;
+}
+.webname img{
+    height: 100px;
+}
+.navlist ul li{
+    display: inline-block;
+    padding: 0 30px;
+    cursor: pointer;
+}
+.navlist ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Lilita One', cursive;
+}
+.navlist ul li:hover a{
+    color: #30fe30;
+}
+.navlist ul{
+    padding: 30px;
+}
+.webname h1{
+    padding: 30px 0 0 0;
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+.btn1{
+    padding: 10px 30px;
+    border-radius: 30px;
+    background: linear-gradient( to right,#9912d7, #ec2be4, #dd5115);
+    color: #fff;
+    border: none;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    cursor: pointer;
+}
+.btn2 , .btn3{
+    margin: 0 30px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+.btn1:hover{
+    background: linear-gradient( to left,#9912d7, #ec2be4);
+}
+.box{
+    width: 260px;
+    height: 230px;
+    margin: 30px 50px 0 50px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.box:hover h3{
+    color: #30fe30;
+}
+.box:hover p{
+    color: #30fe30;
+}
+.box img{
+    height: 30%;
+}
+.box h3{
+    color: #fff;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    font-family: 'Lilita One', cursive;
+}
+.box p{
+    padding-top: 20px;
+    color: #fff;
+    line-height: 25px;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    letter-spacing: 1px;
+}
+@media (max-width:992px){
+    .content h1{
+        font-size: 3rem;
+    }
+    .content p{
+        letter-spacing: 0;
+    }
+   .navlist{
+    display: none;
+   } 
+   .hamburg {
+    display:inherit;
+   }
+   .navlist ul{
+    position: absolute;
+    top: 101px;
+    width: 100%;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.7);
+   }
+   .navlist ul li{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    border: 1px dashed #fff;
+    border-left: none;
+    border-right: none;
+   }
+}
+@media (max-width:620px){
+    .content h1{
+        font-size: 2.5rem;
+    }
+    .webname img{
+        height: 70px;
+    }
+    .webname h1{
+        font-size: 1.5rem;
+        padding-top: 20px;
+    }
+    .hamburg i{
+        font-size: 2rem;
+    }
+    .navlist ul{
+        top: 71px;
+    }
+}
+.add{
+    display: contents;
+}
+
